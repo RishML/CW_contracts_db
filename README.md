@@ -35,15 +35,7 @@
 - customer_id, executor_id, contract_date
 - payments.contract_id
 - organizations.inn
-
-## Триггер
-Автоматический пересчет общей суммы договора при изменении этапов:
-
-```sql
-CREATE TRIGGER trg_contract_stages_changes
-AFTER INSERT OR UPDATE OR DELETE ON contract_stages
-EXECUTE FUNCTION update_contract_total();
-
+  
 ## Представления (VIEW)
 active_contracts - активные договоры
 contract_details - детальная информация
@@ -53,3 +45,13 @@ report_supplier_payments_plan - график платежей поставщик
 report_customer_payments_actual - график поступлений от покупателей
 debt_receivable - дебиторская задолженность
 debt_payable - кредиторская задолженность
+
+## Триггер
+Автоматический пересчет общей суммы договора при изменении этапов:
+
+```sql
+CREATE TRIGGER trg_contract_stages_changes
+AFTER INSERT OR UPDATE OR DELETE ON contract_stages
+EXECUTE FUNCTION update_contract_total();
+
+
