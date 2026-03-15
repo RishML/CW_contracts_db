@@ -37,14 +37,14 @@
 - organizations.inn
   
 ## Представления (VIEW)
-active_contracts - активные договоры
-contract_details - детальная информация
-contract_statistics - статистика по годам
-report_contract_details - все этапы, оплаты, задолженность
-report_supplier_payments_plan - график платежей поставщикам
-report_customer_payments_actual - график поступлений от покупателей
-debt_receivable - дебиторская задолженность
-debt_payable - кредиторская задолженность
+- active_contracts - активные договоры
+- contract_details - детальная информация
+- contract_statistics - статистика по годам
+- report_contract_details - все этапы, оплаты, задолженность
+- report_supplier_payments_plan - график платежей поставщикам
+- report_customer_payments_actual - график поступлений от покупателей
+- debt_receivable - дебиторская задолженность
+- debt_payable - кредиторская задолженность
 
 ## Триггер
 Автоматический пересчет общей суммы договора при изменении этапов:
